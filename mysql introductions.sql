@@ -19,7 +19,7 @@
 -- MySQL is free to use.
 -- Source code is available for modification and distribution under the GNU General Public License.
 
--- Cross-Platform: 
+-- Cross-Platform:
 -- MySQL is available for various operating systems, including Linux, Windows, and macOS.
 
 -- Scalability: 

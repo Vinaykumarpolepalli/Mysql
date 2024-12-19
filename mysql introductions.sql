@@ -92,3 +92,44 @@
 -- 8. AUTO_INCREMENT
 -- The AUTO_INCREMENT constraint is used to automatically generate a unique value when a new record is inserted, typically used for primary keys.
 -- The value starts at 1 and increments by 1 for each new row
+
+
+-- Primary Key:
+-- Uniquely identifies each row within its own table.
+-- Cannot contain NULL values.
+-- A table can have only one primary key.
+-- For Primary Key we need not to give not null constraint.
+-- Primary keys are default indexes.
+
+-- Foreign Key:
+-- Establishes a relationship between two tables.
+-- Foreign Key of one table has to be another table Primary Key.
+-- Can contain NULL values (unless explicitly restricted) - Better to take not null.
+-- A table can have many foreign keys.
+
+
+-- 1st Normal Form:
+-- First Normal Form (1NF) of normalization process, used to organize and structure data in a relational database. 
+-- Conditions:
+-- Atomic Values: All columns must contain atomic (indivisible) values. 
+-- Each field (or cell) should contain only a single value. (That is not a set of values or lists). 
+-- Each row in the table must be unique. 
+-- We should uniquely identify each record, (using a Primary Key).
+-- Each column should store values of a single data type (Example: text, integer, date), ensuring column consistency.
+-- 1NF Features:
+-- Data should not contain multiple values in a single column (No multiple phone numbers stored in one column).
+-- Every column must hold a single value per record.
+
+
+-- Group by:
+-- GROUP BY clause is used to arrange identical data into groups. 
+-- Useful to perform aggregate operations, such as counting, summing, or averaging, on groups of rows that share a common property.
+-- Every column in the SELECT statement that is not part of an aggregate function must be included in the GROUP BY clause.
+-- GROUP BY is used with aggregate functions such as COUNT(), SUM(), AVG(), MIN(), and MAX().
+-- Use HAVING clause to filter the results after aggregation, while WHERE is used before aggregation.
+-- Evaluation Process: FROM->WHERE->GROUP BY->HAVING
+-- Syntax: 
+-- SELECT column1, column2, aggregate_function(column3)
+-- FROM table_name
+-- WHERE condition
+-- GROUP BY column1, column2;

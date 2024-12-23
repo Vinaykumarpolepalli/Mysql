@@ -19,7 +19,7 @@
 -- MySQL is free to use.
 -- Source code is available for modification and distribution under the GNU General Public License.
 
--- Cross-Platform:
+-- Cross-Platform: 
 -- MySQL is available for various operating systems, including Linux, Windows, and macOS.
 
 -- Scalability: 
@@ -133,3 +133,55 @@
 -- FROM table_name
 -- WHERE condition
 -- GROUP BY column1, column2;
+
+
+
+
+-- Example Different Types of MySQL Datatypes: 
+
+-- Datatypes:
+-- •	Numeric
+-- •	Date and Time
+-- •	String Types.
+
+-- Numeric Data Types
+-- •	INT − You can specify a width of up to 11 digits (-2147483648 to 2147483647).
+-- •	TINYINT − You can specify a width of up to 4 digits (0 to 255).
+-- •	SMALLINT −You can specify a width of up to 5 digits (-32768 to 32767).
+-- •	MEDIUMINT − You can specify a width of up to 9 digits (-8388608 to 8388607).
+-- •	BIGINT − You can specify a width of up to 20 digits (-9223372036854775808 to 9223372036854775807).
+-- •	FLOAT(M,D) − Decimal precision can go to 24 places for a FLOAT.
+-- •	DOUBLE(M,D) − A double precision floating-point number. REAL is a synonym for DOUBLE.
+-- •	DECIMAL(M,D) − NUMERIC is a DECIMAL.
+
+-- Date and Time Types
+-- •	DATE − YYYY-MM-DD format. 
+-- •	DATETIME − YYYY-MM-DD HH:MM:SS format
+-- •	TIMESTAMP − A timestamp format is YYYYMMDDHHMMSS .
+-- •	TIME − Stores the time in a HH:MM:SS format.
+-- •	YEAR(length) − Stores a year in a 2-digit or a 4-digit format. Default length is 4.
+
+-- String Types
+-- •	CHAR(length) − string between 1 and 255 characters (fixed) 
+-- •	VARCHAR(length) − length string between 1 and 255 characters in length. 
+-- •	BLOB or TEXT − maximum length of 65535 characters. BLOB means "Binary Large Objects" for storing large binary data (images or other types of files).
+-- •	TINYBLOB or TINYTEXT − maximum length of 255 characters. 
+-- •	MEDIUMBLOB or MEDIUMTEXT − maximum length of 16777215 characters. 
+-- •	LONGBLOB or LONGTEXT − maximum length of 4294967295 characters. 
+-- •	ENUM − An enumeration, which is a list consists of several values. 
+
+
+-- Explain Different command categories of MySQL
+
+-- SQL Consists of:
+-- 1. DDL – Data Definition Language
+-- CREATE, DROP, ALTER, TRUNCATE, RENAME
+
+-- 2. DQL – Data Query Language
+-- SELECT
+-- 3. DML – Data Manipulation Language
+-- INSERT, UPDATE, DELETE.
+-- 4. DCL – Data Control Language
+-- GRANT, REVOKE
+-- 5. TCL – Transaction Control Language
+-- COMMIT, ROLLBACK, SAVEPOINT, SET TRANSACTION

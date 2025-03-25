@@ -185,3 +185,39 @@
 -- GRANT, REVOKE
 -- 5. TCL – Transaction Control Language
 -- COMMIT, ROLLBACK, SAVEPOINT, SET TRANSACTION
+
+
+insert into student	(studno,studname) values
+(21,"sai");
+alter  table student add column studfees int;
+insert into student values(21,"raju",75,30000);
+
+
+select * from student;  
+
+select current_date();
+select now();
+
+select distinct  studname from student;
+/*where*/
+select * from student where studname like 's%';
+
+/*group by*/
+select studname , sum(marks) as totalmarks
+from student group by studname;
+
+/*group by and having*/
+select studname , sum(marks) as totalmarks
+from student group by studname having totalmarks >500; 
+
+
+/*order by*/
+select studname, marks 
+from student order by  marks ;
+
+select distinct marks,studname from student;
+
+select  distinct studname, marks 
+from student order by  marks  desc limit 3 offset 3;
+
+delete  from student where studname = "vinay";

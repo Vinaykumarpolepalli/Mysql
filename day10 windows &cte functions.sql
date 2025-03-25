@@ -91,14 +91,17 @@ from superstore)
 select * from vkk where rnk =3;
 
 
+
+
 # employee for each department  who holds rank 2,3, and 5
 # employee id , first _name, department , salary
-select *  from myemp;
 with emp as(
-select  emp_id, first_name , last_name ,dep_id ,salary,
+select  emp_id,first_name ,last_name,dep_id ,salary,
 dense_rank () over (partition by dep_id order by salary desc) RNK
 from myemp)
-select * from emp where rnk in (first_name,last_name,salary);
+select * from emp where rnk in (2,3,5);
+
+
 
 
 

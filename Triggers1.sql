@@ -4,6 +4,7 @@ ename varchar(30) not null,
 sal int not null,
 primary key(empno));
 use batch55;
+
 create table employee_audit(
 sno int auto_increment,
 empno int not null,
